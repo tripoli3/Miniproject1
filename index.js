@@ -27,6 +27,8 @@ const handleSave = () => {
 
 submitFormEl.addEventListener('click', handleSave);
 
+// test //
+
 // 메인 화면 보내기
 const footerSubmitFormEl = document.querySelector('#footerSubmitForm');
 const footernameEl = document.querySelector('[name="footerName"]');
