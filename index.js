@@ -11,6 +11,18 @@ const handleSave = () => {
   const emailValue = emailEl.value;
 
   // 입력값 검증
+  if (!nameEl.value || !emailEl.value || !messageEl.value) {
+    alert('모든 필드를 입력해주세요.');
+  } else if (!emailValue.includes('@')) {
+    alert('유효한 이메일 주소를 입력해주세요.');
+  } else {
+    console.log('Form values:', {
+      name: nameEl.value,
+      email: emailEl.value,
+      message: messageEl.value,
+    });
+    modal.hide();
+  }
 };
 
 submitFormEl.addEventListener('click', handleSave);
