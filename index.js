@@ -50,7 +50,6 @@ const footeremailEl = document.querySelector('[name="footerEmail"]');
 const footermessageEl = document.querySelector('[name="footerMessage"]');
 
 const handleSave2 = (event) => {
-  console.log(event);
   event.preventDefault(); // 폼 제출 시 페이지 리로드 방지
   if (footernameEl.value && footeremailEl.value && footermessageEl.value) {
     console.log('Form values:', {
