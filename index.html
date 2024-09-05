@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body>
+  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
     <!-- 네비게이션 바 -->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -142,12 +142,15 @@
       <!-- cta 섹션 -->
       <section class="cta-section py-5 text-center">
         <div class="container">
-          <h2 class="text-light mb-4">미래를 함께 만들어갈 준비가 되셨나요?</h2>
+          <h2 class="text-light mb-4" data-aos="fade-up">
+            미래를 함께 만들어갈 준비가 되셨나요?
+          </h2>
           <button
             type="button"
             class="btn btn-lg btn-light"
             data-bs-toggle="modal"
             data-bs-target="#myModal"
+            data-aos="fade-up"
           >
             무료 상담 받기
           </button>
@@ -157,7 +160,7 @@
       <section class="story py-5" id="clientstory">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-up">
               <div class="card">
                 <div class="card-body">
                   <p>
@@ -168,7 +171,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-up">
               <div class="card">
                 <div class="card-body">
                   <p>
@@ -181,7 +184,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-up">
               <div class="card">
                 <div class="card-body">
                   <p>
@@ -199,7 +202,7 @@
       <section class="ask py-5" id="ask">
         <div class="container">
           <h2 class="text-center mb-5">문의하기</h2>
-          <form class="col-8 mx-auto" id="footerForm">
+          <form class="col-8 mx-auto" id="footerForm" data-aos="fade-up">
             <div class="mb-3 center">
               <input
                 name="footerName"
